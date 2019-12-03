@@ -62,6 +62,21 @@ public class PlayerAction : MonoBehaviour {
         return cash;
     }
 
+    public void SetOilNumber(int _oilNumber)
+    {
+        oilNumber = _oilNumber;
+    }
+
+    public void SetGoldNumber(int _goldNumber)
+    {
+        goldNumber = _goldNumber;
+    }
+
+    public void SetAvailableCash(float _cash)
+    {
+        cash = _cash;
+    }
+
     private void Withdraw(float amount) {
         if (amount > cash) {
             throw new System.ArgumentException("Manque de fond");
